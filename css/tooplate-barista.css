@@ -552,7 +552,7 @@ strong {
 }
 
 .small-text {
-  color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .hero-section .custom-border-btn {
