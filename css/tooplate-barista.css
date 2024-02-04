@@ -44,6 +44,33 @@ body {
   width: 70%;
   height: auto;
 }
+
+body {
+  font-family: Alegreya Sans;
+  background: #feeded;
+}
+
+
+
+select {  
+  background-color:#220801;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  border-radius: 2px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 30px 10px 10px;
+  
+ 
+}
+
+
+
+
+
+
+
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -358,7 +385,16 @@ strong {
   height: auto;
   margin-right: 10px;
 }
-
+.navbar-brand-imagece {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+}
+.link22{
+  display: inline-block;
+  color:#ffffff;
+  text-decoration: none;
+}
 .navbar .custom-btn {
   padding: 10px 20px;
 }
@@ -521,7 +557,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-color: var(--dark-color);
+  background-color: #8f23029a;
   position: relative;
   overflow: hidden;
   min-height: 620px;
@@ -552,7 +588,7 @@ strong {
 }
 
 .small-text {
-  color: var(--white-color);
+  color: var(--secondary-color);
 }
 
 .hero-section .custom-border-btn {
@@ -653,7 +689,7 @@ strong {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .team-block-info {
@@ -686,15 +722,35 @@ strong {
 .menu-block-wrap {
   background: rgba(0, 0, 0, 0.65);
   border-radius: var(--border-radius-medium);
-  padding: 45px;
+  padding: 40px;
+  
+
 }
 
+.container1 .rocon{
+  justify-content:center;
+  padding: 10%;
+  margin: auto;
+width: fit-content;
+height: auto;
+position: relative;
+
+}
+.menu-block-wrap2 {
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: var(--border-radius-medium);
+  padding:40px;
+  justify-content: center;
+  display:inline-block
+}
 .menu-block .border-top {
   border-top-color: rgba(255, 255, 255, 0.35) !important;
 }
 
 .menu-block h6 {
   color: var(--white-color);
+  font-size:medium;
+  
 }
 
 .menu-block small {
