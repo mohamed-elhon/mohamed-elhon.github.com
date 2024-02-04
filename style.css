@@ -1,97 +1,144 @@
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500&display=swap" rel="stylesheet">
+@gray-darker:               #444444;
+@gray-dark:                 #696969;
+@gray:                      #999999;
+@gray-light:                #cccccc;
+@gray-lighter:              #ececec;
+@gray-lightest:             lighten(@gray-lighter,4%);
 
-* {
-  fotn-size= 50px;
-  font-family: 'AR One Sans', sans-serif;
-    
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
 }
+
+html {
+  background-color: #f0f0f0;
+}
+
 body {
-  background-color: lightblue;
+  color: @gray;
+  font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid @gray-light;
+  //border-radius: 1rem;
+  color: @gray-dark;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
 }
 
 .card {
- width: 190px;
- padding: 1.9rem 1.2rem;
- text-align: center;
- background: #2a2b38;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+  }
 }
 
-/*Inputs*/
-.field {
- margin-top: .5rem;
- display: flex;
- align-items: center;
- justify-content: center;
- gap: .5em;
- background-color: #1f2029;
- border-radius: 4px;
- padding: .5em 1em;
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
 }
 
-.input-icon {
- height: 1em;
- width: 1em;
- fill: #ffeba7;
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+ filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+	  display: block;
+    padding-top: 56.25%; / 16:9 aspect ratio
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
 }
 
-.input-field {
- background: none;
- border: none;
- outline: none;
- width: 100%;
- color: #d3d3d3;
+.card__image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
 }
 
-/*Text*/
-.title {
- margin-bottom: 1rem;
- font-size: 1.5em;
- font-weight: 500;
- color: #f5f5f5;
+.card__image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
 }
 
-/*Buttons*/
-.btn {
- margin: 1rem;
- border: none;
- border-radius: 4px;
- font-weight: bold;
- font-size: .8em;
- text-transform: uppercase;
- padding: 0.6em 1.2em;
- background-color: #ffeba7;
- color: #5e6681;
- box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
- transition: all .3s ease-in-out;
+.card__image--record {
+  background-image: url(https://unsplash.it/800/600?image=39);
 }
 
-.btn-link {
- color: #f5f5f5;
- display: block;
- font-size: .75em;
- transition: color .3s ease-out;
+.card__image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
 }
 
-/*Hover & focus*/
-.field input:focus::placeholder {
- opacity: 0;
- transition: opacity .3s;
+.card__title {
+  color: gray-dark;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.btn:hover {
- background-color: #5e6681;
- color: #ffeba7;
- box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
 }
 
-.btn-link:hover {
- color: #ffeba7;
-}

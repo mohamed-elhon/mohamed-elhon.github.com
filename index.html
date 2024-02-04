@@ -25,9 +25,19 @@
         <link href="css/tooplate-barista.css" rel="stylesheet">
         
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+
+
+
+
+
+
     </head>
     
     <body>
+        
              <script src="js/langu.js"></script>   
             <main>
                 <nav class="navbar navbar-expand-lg">                
@@ -52,7 +62,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="CHOCOLATE_team">Products
+                                    <a class="nav-link click-scroll" href="#CHOCOLATE_team">Products
                                     </a>
                                 </li>
 
@@ -65,19 +75,45 @@
                                     <a class="nav-link click-scroll" href="#section_5">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_6"><select id="langset">
-
-                                    <option value="ar" selected>English</option>
-                                    <option value="en">اللغة العربية</option>
-                                    </select></a>
+                                    <a class="nav-link click-scroll" href="./Profile/Chocolate-co.pdf" target="_blank">Profile</a>
                                 </li>
+                            
+
                             </ul>
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="flag-icon flag-icon-us me-1"></span> <span>English</span></button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-us me-1"></span> <span>English</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-fr me-1"></span> <span>French</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-es me-1"></span> <span>Spanich</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-it me-1"></span> <span>Italiano</span></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-eg me-1"></span> <span>العربية</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                            
+
+
+
 
                             
                         </div>
                     </div>
                 </nav>
-
+  
 
                 <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
 
@@ -197,7 +233,7 @@
                         </div>
                     </div>
                 </section>
-
+                
                 <section class="menu-section section-padding" id="section_3">
                     <div class="container">
                         <div class="row">
@@ -349,20 +385,11 @@
                                 
                                         </div> 
                                         <P></P>
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="images/slides/ghe.jpeg" sizes="10*10" alt="image">
-                                                <P></P>
-                                                <div class="overlay-text"><h6>Animal ghee & <P></P> vegetable ghee</h6></div>
-                                                
-                                            </div>
-                                            <div class="image-container">
-                                                <img src="images/slides/veg.jpeg" sizes="10*10" alt="image">
-                                                <P></P>
-                                                <div class="overlay-text"><h6>Frozen<P></P>Vegetables</h6></div>
-                                            </div>
+                                        <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="products.html">
+                                            All products
+                                        </a>
                                             
-                                            <span class="underline"></span>
+                                            
                                 
                                         </div>
                                         
@@ -401,7 +428,7 @@
 
                                             <div class="reviews-block-info">
                                                 <p>One of our services is marketing products to the global market, and we rely on our own strategies, including: studying the labor market’s needs and competition.</p>
-
+                                                <P><a class="btn custom-btn smoothscroll me-2 mb-2" href="markting.html"><strong>More About Marketing Solution</strong></a></P>
                                                 
                                             </div>
                                         </div>
@@ -422,7 +449,7 @@
 
                                             <div class="reviews-block-info">
                                                 <p>It is certain that our company is a leader in the field of international trade, and has several branches, most notably the Egypt branch and the Dubai branch. We manage import and export operations with high professionalism after ensuring the quality and suitability of the products. We also conduct inspections through responsible authorities.</p>
-
+<P><a class="btn custom-btn smoothscroll me-2 mb-2" href="imex.html"><strong>More About Import & Export</strong></a></P>
                                                 
                                             </div>
                                         </div>
@@ -436,13 +463,13 @@
                                                 <img src="images/slides/cement.jpg" class="reviews-block-image img-fluid" alt="">
 
                                                 <div class="">
-                                                    <h6 class="text-white mb-0">test</h6>
-                                                    <em class="text-white"> test</em>
+                                                    <h6 class="text-white mb-0">All services</h6>
+                                                    <em class="text-white"> All chocolate company services</em>
                                                 </div>
                                             </div>
 
                                             <div class="reviews-block-info">
-                                                <p>some</p>
+                                                <p><a class="btn custom-btn smoothscroll me-2 mb-2" href="serv.html"><strong>All chocolate company services</strong></a></p>
 
                            
                                                 </div>
@@ -455,7 +482,7 @@
                         </div>
                     </div>
                 </section>
-
+                
 
                 <section class="contact-section section-padding" id="section_5">
                     <div class="container">
