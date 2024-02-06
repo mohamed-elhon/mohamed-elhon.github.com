@@ -1,0 +1,68 @@
+.catgr .classifications-container{
+    background-color: rgb(58, 19, 1);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.hh2{
+ 
+    color: lightyellow;
+}
+.ppp{
+    color: #ccc;
+
+    padding: 10px;
+}
+.dhh{
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+    width:max-content;
+}
+.dpp{
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+    width:max-content;
+}
+.hhhl{
+    
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    margin: auto;
+    
+}
+.classifications-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .classifications-list {
+    list-style: none;
+    padding: 0;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .classification {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .classification img {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .classification h3 {
+    margin: 10px 0;
+  }
